@@ -51,11 +51,6 @@ if ('geolocation' in navigator) {
         window.ubicacionMarker.setLatLng([latitude, longitude]);
       }
 
-      // Centrar mapa solo la primera vez
-      if (!window.mapaCentrado) {
-        map.setView([latitude, longitude], 15);
-        window.mapaCentrado = true;
-      }
     },
     (error) => {
       console.error('Error al obtener ubicación:', error);
