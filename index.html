@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kit del Peregrino</title>
 
-  <!-- Estilos personalizados -->
+  <!-- Estilos -->
   <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#006400" />
 </head>
 <body>
   <header>
@@ -21,11 +23,20 @@
     <button id="btnUbicacion">📍 Mi ubicación</button>
   </main>
 
-  <!-- Leaflet JS -->
+  <!-- Scripts Leaflet -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-  <!-- Scripts principales -->
+  <!-- Script principal en módulos -->
   <script type="module" src="js/main.js"></script>
+
+  <!-- Registro de Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log("✔️ Service Worker registrado"))
+        .catch(err => console.error("❌ Error al registrar Service Worker:", err));
+    }
+  </script>
 </body>
 </html>
 
