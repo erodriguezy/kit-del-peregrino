@@ -1,0 +1,24 @@
+body {
+  background-color: #fff8ed;  /* Mismo fondo suave de pasos */
+}
+
+.card {
+  border: none; /* Más limpio */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+  background-color: #fffdf6; /* Fondo cálido como pasos */
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #5d473a; /* Color de texto de pasos */
+}
+
+.card-text {
+  color: #5d473a;
+}
+
+.card-title i {
+  margin-right: 10px;
+  color: inherit; /* Icono hereda color del título */
+}

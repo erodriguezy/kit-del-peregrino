@@ -1,0 +1,15 @@
+/* css/musica.css */
+body {
+  background-color: #f0f4f8;
+}
+.card-music {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+}
+.audio {
+  width: 100%;
+}
+.card-title {
+  font-weight: bold;
+}

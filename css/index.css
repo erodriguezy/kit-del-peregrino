@@ -1,0 +1,52 @@
+.menu-btn {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      color: white;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px auto;
+      border: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    .menu-btn:hover { transform: scale(1.05); }
+    .btn-misas     { background: linear-gradient(to right, #a044ff, #6a3093); }
+    .btn-mapa      { background: linear-gradient(to right, #1e3c72, #2a5298); }
+    .btn-pasos     { background: linear-gradient(to right, #ff5f6d, #ffc371); }
+    .btn-consejos  { background: linear-gradient(to right, #56ab2f, #a8e063); }
+    .btn-musica    { background: linear-gradient(to right, #614385, #516395); }
+    .btn-oraciones { background: linear-gradient(to right, #4e70a6, #5ed1ff); }
+    .btn-catequesis{ background: linear-gradient(to right, #189768, #075f39); }
+    .oculto { display: none; }
+
+    /* css/style.css */
+
+/* Logos en el header */
+header .logo {
+  height: 50px;
+  width: auto;
+  margin: 0 8px;
+}
+
+/* Para que el header use nuestro color personalizado */
+header {
+  background-color: #d8b475; /* si quieres mantener el mismo color */
+}
+
+/* Asegurar que el título quede centrado */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ajustes generales de cuerpo y tipografía */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #5d473a;
+  background-color: #fff8ed;
+}

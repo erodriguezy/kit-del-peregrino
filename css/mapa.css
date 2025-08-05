@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f0f0f0;
+}
+
+header {
+  background: #FFCF40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+#map {
+  height: 90vh;
+  width: 100%;
+}
+
+.leaflet-tooltip.etiqueta-parada {
+  background-color: #fff;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #006400;
+}
+
+/* css/mapa.css */
+
+/* css/mapa.css */
+
+/* Botones en el mapa comparten estilo uniforme */
+.map-button {
+  position: absolute;
+  right: 1rem;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mi ubicación: rojo */
+#btnUbicacion {
+  bottom: 4rem;
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Menú principal: amarillo */
+#btnMenu {
+  bottom: 1rem;
+  background-color: #ffc107;
+  color: #5d473a;
+}
+
+/* Hover específico */
+#btnUbicacion:hover {
+  background-color: #b52a3c;
+}
+
+#btnMenu:hover {
+  background-color: #e6b800;
+}
+

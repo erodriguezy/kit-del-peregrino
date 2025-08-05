@@ -5,38 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kit del Peregrino</title>
 
-  <!-- Estilos -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Bootstrap & Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <!-- PWA -->
-  <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#006400" />
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  <header>
-    <h1>Kit del Peregrino</h1>
+   <header class="bg-success text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Logos izquierda -->
+      <div class="d-flex">
+        <img src="./assets/logos/logo1.png" alt="Logo 1" class="logo" />
+        <img src="./assets/logos/logo2.png" alt="Logo 2" class="logo" />
+      </div>
+      <!-- Título central -->
+      <h1 class="m-0">Kit del Peregrino</h1>
+      <!-- Logos derecha -->
+      <div class="d-flex">
+        <img src="./assets/logos/logo3.png" alt="Logo 3" class="logo" />
+        <img src="./assets/logos/logo4.png" alt="Logo 4" class="logo" />
+      </div>
+    </div>
   </header>
 
-  <main>
-    <div id="map"></div>
-    <button id="btnUbicacion">📍 Mi ubicación</button>
+
+  <main class="container text-center my-4">
+    <!-- Menú circular -->
+    <div id="menuInicio" class="row justify-content-center">
+      <div class="col-6 col-md-4">
+        <a href="paginas/misas.html" class="menu-btn btn-misas text-decoration-none">
+          <i class="fas fa-church fa-2x"></i><br>Misas
+        </a>
+      </div>
+      <div class="col-6 col-md-4">
+         <a href="paginas/mapa.html" class="menu-btn btn-mapa" >
+            <i class="fas fa-map-marked-alt fa-2x"></i><br>Mapa
+        </a>
+      </div>
+      <div class="col-6 col-md-4">
+        <a href="paginas/pasos.html" class="menu-btn btn-pasos text-decoration-none">
+            <i class="fas fa-list-check fa-2x"></i><br>Pasos
+        </a>
+      </div>
+      <div class="col-6 col-md-4">
+        <a href="paginas/consejos.html" class="menu-btn btn-consejos text-decoration-none">
+            <i class="fas fa-lightbulb fa-2x"></i><br>Consejos
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4">
+       <a href="paginas/catequesis.html" class="menu-btn btn-catequesis text-decoration-none">
+          <i class="fas fa-book-open fa-2x"></i><br>Catequesis
+       </a>
+     </div>
+      
+      <div class="col-6 col-md-4">
+        <a href="paginas/oraciones.html" class="menu-btn btn-oraciones text-decoration-none">
+            <i class="fas fa-praying-hands fa-2x"></i><br>Oraciones
+        </a>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+        <a href="paginas/musica.html" class="menu-btn btn-musica text-decoration-none">
+            <i class="fa-solid fa-music"></i><br>Musica
+        </a>
+      </div>
+    
   </main>
 
-  <!-- Scripts Leaflet -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-  <!-- Script principal en módulos -->
-  <script type="module" src="js/main.js"></script>
-
-  <!-- Registro de Service Worker -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log("✔️ Service Worker registrado"))
-        .catch(err => console.error("❌ Error al registrar Service Worker:", err));
-    }
-  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 

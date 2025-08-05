@@ -1,0 +1,31 @@
+/* css/videos.css */
+
+/* Color de fondo suave, coherente con otras páginas */
+body {
+  background-color: #fff8ed;
+}
+
+/* Tarjetas para videos, usando mismo estilo de pasos */
+.card-step {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #fffdf6;
+  margin-bottom: 20px;
+}
+
+/* Título de cada video en color café oscuro */
+.card-title {
+  font-weight: bold;
+  color: #5d473a;
+}
+
+/* Ícono de YouTube hereda color del título */
+.card-title i {
+  margin-right: 10px;
+  color: #5d473a;
+}
+
+/* Asegurar que los iframes no tengan borde */
+.ratio iframe {
+  border: none;
+}
