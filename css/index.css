@@ -21,6 +21,7 @@
     .btn-musica    { background: linear-gradient(to right, #614385, #516395); }
     .btn-oraciones { background: linear-gradient(to right, #4e70a6, #5ed1ff); }
     .btn-catequesis{ background: linear-gradient(to right, #189768, #075f39); }
+    .btn-descargas { background: linear-gradient(to right, #bc7171, #bc1414); }
     .oculto { display: none; }
 
     /* css/style.css */
